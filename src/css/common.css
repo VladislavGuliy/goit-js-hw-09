@@ -16,3 +16,44 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0;
+}
+
+.button {
+  min-width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+
+  border-radius: 4px;
+  border-width: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.9;
+  text-transform: uppercase;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  background-color: #d0d0d0;
+}
+
+.button:first-child {
+  margin-right: 10px;
+}
+
+.button:not([disabled]):hover,
+.button:not([disabled]):focus {
+  background-color: #a0a0a0;
+  cursor: pointer;
+}
+
+.button:not([disabled]):active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
