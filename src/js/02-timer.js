@@ -24,14 +24,14 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     const dateNow = Date.now();
-    
+
     if (selectedDates[0] <= dateNow) {
       Notiflix.Notify.failure('Please choose a date in the future');
       refs.buttonStart.disabled = true;
-    } else {
-      Notiflix.Notify.success('Please press the Start button!');
-      refs.buttonStart.disabled = false;
+      return;
     }
+    Notiflix.Notify.success('Please press the Start button!');
+    refs.buttonStart.disabled = false;
   },
 };
 

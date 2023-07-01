@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon"  href="image/favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>Promise generator</title>
     <link rel="stylesheet" href="css/common.css" />
   </head>
@@ -11,19 +11,19 @@
     <p><a href="index.html">Go back</a></p>
 
     <form class="form">
-      <label>
+      <label class="form__label">
         First delay (ms)
-        <input type="number" name="delay" required />
+        <input class="form__input" type="number" name="delay" required />
       </label>
-      <label>
+      <label class="form__label">
         Delay step (ms)
-        <input type="number" name="step" required />
+        <input class="form__input" type="number" name="step" required />
       </label>
-      <label>
+      <label class="form__label">
         Amount
-        <input type="number" name="amount" required />
+        <input class="form__input" type="number" name="amount" required />
       </label>
-      <button type="submit">Create promises</button>
+      <button class="button button--form" type="submit">Create promises</button>
     </form>
 
     <script src="js/03-promises.js" type="module"></script>

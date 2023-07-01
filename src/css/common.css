@@ -105,3 +105,25 @@ p {
   font-size: 50px;
   color: blue;
 }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: center;
+}
+
+.form__input {
+  display: block;
+  height: 48px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.button--form {
+  height: 48px;
+}
+
+.form__label {
+  margin-right: 30px;
+}
